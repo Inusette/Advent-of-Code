@@ -12,32 +12,42 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Advent_2018$Day_2.coverage" NAME="Day_2 Coverage Results" MODIFIED="1543747471125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_2" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_1.coverage" NAME="Day_1 Coverage Results" MODIFIED="1543685196055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_1" />
+    <SUITE FILE_PATH="coverage/Advent_2018$Day_3.coverage" NAME="Day_3 Coverage Results" MODIFIED="1543848139483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_3" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Day_1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day_1/Day_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1439">
+            <state relative-caret-position="870">
               <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Day_2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Day_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day_2/Day_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2445">
-              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+            <state relative-caret-position="11">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="57" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Day_3.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day_3/Day_3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day_2/input.txt">
+        <entry file="file://$PROJECT_DIR$/Day_3/input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3495">
-              <caret line="233" column="26" lean-forward="true" selection-start-line="233" selection-start-column="26" selection-end-line="233" selection-end-column="26" />
+            <state relative-caret-position="428">
+              <caret line="1340" column="21" selection-start-line="1340" selection-start-column="21" selection-end-line="1340" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -58,6 +68,8 @@
         <option value="$PROJECT_DIR$/Day_1/Day_1.py" />
         <option value="$PROJECT_DIR$/Day_2/input.txt" />
         <option value="$PROJECT_DIR$/Day_2/Day_2.py" />
+        <option value="$PROJECT_DIR$/Day_3/input.txt" />
+        <option value="$PROJECT_DIR$/Day_3/Day_3.py" />
       </list>
     </option>
   </component>
@@ -92,12 +104,12 @@
             <path>
               <item name="Advent_2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="Advent_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Day_1" type="462c0819:PsiDirectoryNode" />
+              <item name="Day_2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Advent_2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="Advent_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Day_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day_3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -124,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Day_2">
+  <component name="RunManager" selected="Python.Day_3">
     <configuration name="Day_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Advent_2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,12 +175,33 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="Day_3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Advent_2018" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day_3/Day_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.Day_1" />
       <item itemvalue="Python.Day_2" />
+      <item itemvalue="Python.Day_3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Day_3" />
         <item itemvalue="Python.Day_2" />
         <item itemvalue="Python.Day_1" />
       </list>
@@ -196,11 +229,12 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32916668" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25346968" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25346968" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -211,7 +245,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +252,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Day_1/Day_1.py">
@@ -252,15 +290,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day_1/Day_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1439">
+        <state relative-caret-position="870">
           <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_3/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="1340" column="21" selection-start-line="1340" selection-start-column="21" selection-end-line="1340" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day_2/Day_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2445">
-          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        <state relative-caret-position="11">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="57" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_3/Day_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
