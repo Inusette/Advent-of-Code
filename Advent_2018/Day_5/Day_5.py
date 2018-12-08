@@ -69,9 +69,9 @@ FILE_NAME = 'input.txt'
 
 def read_file(file_name):
     """
-    opens and reads the file, returning the list of lines (strings)
-    :param file_name: file to read (each line is a string)
-    :return: list of strings
+    opens and reads the file, returning the string
+    :param file_name: file to read
+    :return: input string
     """
     f = open(file_name, 'r')
 
