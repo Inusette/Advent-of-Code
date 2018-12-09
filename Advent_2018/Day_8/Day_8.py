@@ -2,16 +2,6 @@
 FILE_NAME = 'input.txt'
 
 
-class Node(object):
-
-    def __init__(self, data):
-        self.data = data
-        self.children = []
-
-    def add_child(self, obj):
-        self.children.append(obj)
-
-
 def read_file(file_name):
     """
     opens and reads the file, returning the string
@@ -44,23 +34,6 @@ def process_tree(tree_log, meta):
 
     if not child_count:
 
-        for att in range(2, attribute_count-1):
-            meta += att
-
-        tree_log = tree_log[(2 + attribute_count-1):]
-
-        if not tree_log:
-            return meta
-
-
-def process_tree_2(tree_log, meta):
-
-    child_count = tree_log[0]
-
-    attribute_count = tree_log[1]
-
-    if not child_count:
-
         for att in range(2, 2 + attribute_count):
             meta += tree_log[att]
 
@@ -73,7 +46,7 @@ def process_tree_2(tree_log, meta):
         children_sum = 0
 
         while child_count:
-            new_log, children_sum = process_tree_2(new_log, children_sum)
+            new_log, children_sum = process_tree(new_log, children_sum)
             child_count -= 1
 
         for att in range(attribute_count):
@@ -97,6 +70,6 @@ print(input_tree_log)
 
 metadata = 0
 
-log, total_sum = process_tree_2(input_tree_log, metadata)
+log, total_sum = process_tree(input_tree_log, metadata)
 
 print(total_sum)
