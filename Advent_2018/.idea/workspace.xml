@@ -11,7 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Advent_2018$Day_2.coverage" NAME="Day_2 Coverage Results" MODIFIED="1543747471125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_2" />
-    <SUITE FILE_PATH="coverage/Advent_2018$Day_8.coverage" NAME="Day_8 Coverage Results" MODIFIED="1544374066130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_8" />
+    <SUITE FILE_PATH="coverage/Advent_2018$Day_8.coverage" NAME="Day_8 Coverage Results" MODIFIED="1544394097399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_8" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_5.coverage" NAME="Day_5 Coverage Results" MODIFIED="1544035609914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_5" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_7.coverage" NAME="Day_7 Coverage Results" MODIFIED="1544355373217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_7" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_1.coverage" NAME="Day_1 Coverage Results" MODIFIED="1543685196055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_1" />
@@ -24,8 +24,8 @@
       <file leaf-file-name="Day_8.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day_8/Day_8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-286">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="316">
+              <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
             </state>
           </provider>
         </entry>
@@ -97,11 +97,6 @@
             <path>
               <item name="Advent_2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="Advent_2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advent_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advent_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Day_5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Advent_2018" type="b2602c69:ProjectViewProjectNode" />
@@ -268,9 +263,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32916668" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25346968" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25346968" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
@@ -407,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day_8/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35448" selection-start-column="35448" selection-end-column="35448" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day_5/Day_5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -421,10 +409,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Day_8/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35448" selection-start-column="35448" selection-end-column="35448" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day_8/Day_8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="316">
+          <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
         </state>
       </provider>
     </entry>
