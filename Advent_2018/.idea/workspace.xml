@@ -13,32 +13,52 @@
     <SUITE FILE_PATH="coverage/Advent_2018$Day_2.coverage" NAME="Day_2 Coverage Results" MODIFIED="1543747471125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_2" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_8.coverage" NAME="Day_8 Coverage Results" MODIFIED="1544394097399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_8" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_5.coverage" NAME="Day_5 Coverage Results" MODIFIED="1544035609914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_5" />
-    <SUITE FILE_PATH="coverage/Advent_2018$Day_7.coverage" NAME="Day_7 Coverage Results" MODIFIED="1544355373217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_7" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_11.coverage" NAME="Day_11 Coverage Results" MODIFIED="1544690706441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_11" />
-    <SUITE FILE_PATH="coverage/Advent_2018$Day_10_again.coverage" NAME="Day_10_again Coverage Results" MODIFIED="1544559614781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_10" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_9.coverage" NAME="Day_9 Coverage Results" MODIFIED="1544474201980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_9" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_1.coverage" NAME="Day_1 Coverage Results" MODIFIED="1543685196055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_1" />
-    <SUITE FILE_PATH="coverage/Advent_2018$Day_3.coverage" NAME="Day_3 Coverage Results" MODIFIED="1543848139483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_3" />
-    <SUITE FILE_PATH="coverage/Advent_2018$Day_6.coverage" NAME="Day_6 Coverage Results" MODIFIED="1544186204473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_6" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_4.coverage" NAME="Day_4 Coverage Results" MODIFIED="1544000945434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_4" />
     <SUITE FILE_PATH="coverage/Advent_2018$Day_10.coverage" NAME="Day_10 Coverage Results" MODIFIED="1544548907430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_10" />
+    <SUITE FILE_PATH="coverage/Advent_2018$Day_7.coverage" NAME="Day_7 Coverage Results" MODIFIED="1544355373217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_7" />
+    <SUITE FILE_PATH="coverage/Advent_2018$Day_10_again.coverage" NAME="Day_10_again Coverage Results" MODIFIED="1544559614781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_10" />
+    <SUITE FILE_PATH="coverage/Advent_2018$Day_13.coverage" NAME="Day_13 Coverage Results" MODIFIED="1544792351315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_13" />
+    <SUITE FILE_PATH="coverage/Advent_2018$Day_3.coverage" NAME="Day_3 Coverage Results" MODIFIED="1543848139483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_3" />
+    <SUITE FILE_PATH="coverage/Advent_2018$Day_6.coverage" NAME="Day_6 Coverage Results" MODIFIED="1544186204473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_6" />
+    <SUITE FILE_PATH="coverage/Advent_2018$Day_12.coverage" NAME="Day_12 Coverage Results" MODIFIED="1544820734940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day_12" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Day_11.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day_11/Day_11.py">
+      <file leaf-file-name="Day_10.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day_10/Day_10.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-461">
-              <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+            <state relative-caret-position="45">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Day_12.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day_12/Day_12.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="162" column="30" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day_12/example.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day_11/input.txt">
+        <entry file="file://$PROJECT_DIR$/Day_12/input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            <state relative-caret-position="495">
+              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -83,6 +103,10 @@
         <option value="$PROJECT_DIR$/Day_11.py" />
         <option value="$PROJECT_DIR$/Day_11/input.txt" />
         <option value="$PROJECT_DIR$/Day_11/Day_11.py" />
+        <option value="$PROJECT_DIR$/Day_13/example.txt" />
+        <option value="$PROJECT_DIR$/Day_13/input.txt" />
+        <option value="$PROJECT_DIR$/Day_13/Day_13.py" />
+        <option value="$PROJECT_DIR$/Day_12/Day_12.py" />
       </list>
     </option>
   </component>
@@ -112,11 +136,6 @@
             <path>
               <item name="Advent_2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="Advent_2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advent_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advent_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Day_11" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -149,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Day_11">
+  <component name="RunManager" selected="Python.Day_12">
     <configuration name="Day_10" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Advent_2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -207,7 +226,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Day_8" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Day_12" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Advent_2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,18 +234,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day_8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day_12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day_8/Day_8.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day_12/Day_12.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Day_9" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Day_13" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Advent_2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -234,31 +253,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day_9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day_13" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day_9/Day_9.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day_13/Day_13.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.Day_8" />
-      <item itemvalue="Python.Day_9" />
       <item itemvalue="Python.Day_10" />
       <item itemvalue="Python.Day_10_again" />
       <item itemvalue="Python.Day_11" />
+      <item itemvalue="Python.Day_13" />
+      <item itemvalue="Python.Day_12" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Day_12" />
+        <item itemvalue="Python.Day_13" />
         <item itemvalue="Python.Day_11" />
         <item itemvalue="Python.Day_10_again" />
         <item itemvalue="Python.Day_10" />
-        <item itemvalue="Python.Day_9" />
-        <item itemvalue="Python.Day_8" />
       </list>
     </recent_temporary>
   </component>
@@ -277,16 +296,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="26" width="1411" height="817" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.325" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3236111" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26077428" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2717312" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -310,10 +328,87 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="58" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="76" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Day_10/Day_10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_12/example.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_12/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_12/Day_12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" column="16" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_10/Day_10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_12/example.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_12/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_12/Day_12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_11/Day_11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_11/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day_10/Day_10.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2955">
@@ -505,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day_10/Day_10.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day_09/Day_9.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -528,8 +616,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day_11/Day_11.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-461">
-          <caret line="87" column="34" lean-forward="true" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+        <state relative-caret-position="1305">
+          <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_10/Day_10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_12/example.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_12/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_12/Day_12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="162" column="30" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
         </state>
       </provider>
     </entry>
