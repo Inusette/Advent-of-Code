@@ -92,7 +92,7 @@ class NiceStringChecker {
             // attempt to find the pattern in the string
             Matcher m = b.matcher(toCheck);
 
-            // if the string comprises any of the patterns, break out of the loop
+            // if the string doesn't have one of the patterns, break out of the loop
             if (!m.find()) {
                 contains = false;
                 break;

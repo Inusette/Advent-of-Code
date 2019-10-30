@@ -1,5 +1,11 @@
 package Day5;
 
+// Advent of code day 5
+// Nice String:
+// - It does not contain the strings ab, cd, pq, or xy
+// - It contains at least one letter that appears twice in a row  - regex:   "(.)\\1"
+// - It contains at least three vowels - regex:  ".*[aeiou].*[aeiou].*[aeiou].*"
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -26,12 +32,13 @@ public class StringCheckerMain {
         // make a nice string checker object
         NiceStringChecker niceChecker = new NiceStringChecker(BAD, GOOD);
 
+        // for each string in the input list, check if it's nice or not
         if (!inputList.isEmpty()) {
             niceStringsCount = niceChecker.countNice(inputList);
             System.out.printf("There are number of nice strings is - %d", niceStringsCount);
         }
         else {
-            System.out.println("Something went wrong");
+            System.out.println("Something went wrong :( ");
         }
     }
 
@@ -48,7 +55,6 @@ public class StringCheckerMain {
         catch (IOException e) {
             e.printStackTrace();
         }
-
         return fileStrings;
     }
 }
