@@ -21,6 +21,13 @@ class NiceStringChecker {
     }
 
 
+    NiceStringChecker(String[] goodPatterns) {
+        
+        this.goodPatterns = assemblePatterns(goodPatterns);
+        this.badPatterns = new ArrayList<>();
+    }
+
+
     private List<Pattern> assemblePatterns(String[] patternStrings) {
 
         List<Pattern> patternList = new ArrayList<>();
@@ -34,35 +41,23 @@ class NiceStringChecker {
     }
 
 
-    int countNice(List<String> inputStrings) {
+    Boolean checkString(String toCheck) {
 
-        // instantiate the count
-        int niceCount = 0;
+        // if there are bad patterns, check against them
+        if (!badPatterns.isEmpty()) {
 
-        // go over the strings in the given list
-        for (String toCheck : inputStrings) {
-
-            if (checkString(toCheck)) {
-                niceCount++;
+            // if any of the bad patterns are present - return false
+            if (containsOnePattern(toCheck)) {
+                return false;
             }
-        }
-        return niceCount;
-    }
-
-
-    private Boolean checkString(String toCheck) {
-
-        // if any of the bad patterns are present - return false
-        if (containsOnePattern(toCheck, badPatterns)) {
-            return false;
         }
 
         // if all good patterns are present - return true
-        return containsAllPatterns(toCheck, goodPatterns);
+        return containsAllPatterns(toCheck);
     }
 
 
-    private Boolean containsOnePattern(String toCheck, List<Pattern> badPatterns) {
+    private Boolean containsOnePattern(String toCheck) {
 
         Boolean contains = false;
 
@@ -82,12 +77,12 @@ class NiceStringChecker {
     }
 
 
-    private Boolean containsAllPatterns(String toCheck, List<Pattern> badPatterns) {
+    private Boolean containsAllPatterns(String toCheck) {
 
         Boolean contains = true;
 
         // go over each pattern,
-        for (Pattern b : badPatterns) {
+        for (Pattern b : goodPatterns) {
 
             // attempt to find the pattern in the string
             Matcher m = b.matcher(toCheck);
@@ -100,5 +95,4 @@ class NiceStringChecker {
         }
         return contains;
     }
-
 }
