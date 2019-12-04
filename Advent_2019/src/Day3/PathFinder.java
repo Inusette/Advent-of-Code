@@ -1,9 +1,11 @@
 package Day3;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+// Part 1:
+// What is the Manhattan distance from the central port to the closest intersection?
+
+// Part 2:
+// What is the fewest combined steps the wires must take to reach an intersection?
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,7 +19,7 @@ public class PathFinder {
     public static void main(String[] args) {
 
         // read the input into a list of strings
-        List<String> input = readFileToList(INPUT);
+        List<String> input = Utils.InputReader.readFileToList(INPUT);
 
         // assemble the instructions for the given wires
         List<List<String>> instructionsForWires = assembleInput(input);
@@ -31,22 +33,6 @@ public class PathFinder {
         // Part 2:
         System.out.println(wireGrid.findClosestIntersectionBySteps());
 
-    }
-
-
-    private static List<String> readFileToList(String fileName) {
-
-        // instantiate an empty list of strings
-        List<String> fileStrings = new ArrayList<>();
-
-        // attempt to read the file into the list
-        try {
-            fileStrings = Files.readAllLines(Paths.get(fileName), StandardCharsets.UTF_8);
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-        return fileStrings;
     }
 
 
