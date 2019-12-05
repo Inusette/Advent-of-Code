@@ -1,5 +1,7 @@
 package Day03;
 
+// Full task at https://adventofcode.com/2019/day/3
+
 // Part 1:
 // What is the Manhattan distance from the central port to the closest intersection?
 

@@ -1,5 +1,16 @@
 package Day05;
 
+// // Full task at https://adventofcode.com/2019/day/5
+
+// using the Intcode class in day 2 as a base for this one!
+
+// Part 1:
+// After providing 1 to the only input instruction and passing all the tests,
+// what diagnostic code does the program produce?
+
+// Part 2:
+// What is the diagnostic code for system ID 5?
+
 
 import java.util.ArrayList;
 import java.util.List;

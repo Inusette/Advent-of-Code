@@ -1,5 +1,7 @@
 package Day04;
 
+// Full task at https://adventofcode.com/2019/day/4
+
 // Part 1:
 // How many different passwords within the range given in your puzzle input meet these criteria?
 

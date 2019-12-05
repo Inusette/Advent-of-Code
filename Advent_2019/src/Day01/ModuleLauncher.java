@@ -1,5 +1,7 @@
 package Day01;
 
+// Full task at https://adventofcode.com/2019/day/1
+
 // Part 1:
 // The Fuel Counter-Upper needs to know the total fuel requirement.
 // To find it, individually calculate the fuel needed for the mass
@@ -9,7 +11,6 @@ package Day01;
 // What is the sum of the fuel requirements for all of the modules on your spacecraft when also
 // taking into account the mass of the added fuel? (Calculate the fuel requirements for each module
 // separately, then add them all up at the end.)
-// Full task at https://adventofcode.com/2019/day/1
 
 
 import java.util.List;
