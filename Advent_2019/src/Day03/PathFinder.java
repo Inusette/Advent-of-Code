@@ -1,4 +1,4 @@
-package Day3;
+package Day03;
 
 // Part 1:
 // What is the Manhattan distance from the central port to the closest intersection?
@@ -12,7 +12,7 @@ import java.util.List;
 
 public class PathFinder {
 
-    private static final String INPUT = "../Advent_2019/src/Day3/input.txt";
+    private static final String INPUT = "../Advent_2019/src/Day03/input.txt";
     private static final String SEPARATOR = ",";
 
 

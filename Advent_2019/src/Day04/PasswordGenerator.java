@@ -1,4 +1,4 @@
-package Day4;
+package Day04;
 
 
 import java.util.ArrayList;
@@ -26,13 +26,8 @@ class PasswordGenerator {
 
         for (int password = rangeFrom; password <= rangeTo; password++) {
 
-            // check if the current password contains a required pattern
-            if (!hasPattern(password)) {
-                continue;
-            }
-
-            // check if the numbers in the current password are in ascending order
-            if (isAscending(password)) {
+            // check for the basic conditions of a good password
+            if (meetsBasicConditions(password)) {
                 passwords.add(password);
             }
         }
@@ -46,21 +41,21 @@ class PasswordGenerator {
 
         for (int password = rangeFrom; password <= rangeTo; password++) {
 
-            // check if the current password contains a required pattern
-            if (!hasPattern(password)) {
-                continue;
-            }
-
-            if (!hasIndependentPattern(password)) {
-                continue;
-            }
-
-            // check if the numbers in the current password are in ascending order
-            if (isAscending(password)) {
+            // check for the basic conditions of a good password
+            // check for the required advanced pattern
+            if (meetsBasicConditions(password) && hasIndependentPattern(password)) {
                 passwords.add(password);
             }
         }
         return passwords;
+    }
+
+
+    private Boolean meetsBasicConditions(int password) {
+
+        // check if the current password contains a required pattern
+        // check if the numbers in the current password are in ascending order
+        return hasPattern(password) && isAscending(password);
     }
 
 
@@ -73,6 +68,7 @@ class PasswordGenerator {
 
         Boolean isAscending = false;
 
+        // convert the number into an array, sort it, then compare to the unsorted
         int[] sorted =  Integer.toString(password).chars().map(c -> c-'0').toArray();
         Arrays.sort(sorted);
 
@@ -87,9 +83,12 @@ class PasswordGenerator {
 
         Boolean hasIndependent = false;
 
+        // find all the matches for the pattern
         List<String> patternMatches = Utils.ExpressionChecker.getAllMatches(pattern, Integer.toString(password));
 
+        // go over the found matches and check if there is a match of a length 2
         for (String match : patternMatches) {
+
             if (match.length() == 2) {
                 hasIndependent = true;
                 break;

@@ -1,4 +1,4 @@
-package Day2;
+package Day02;
 
 // Part 1:
 // before running the program, replace position 1 with the value 12 and replace position 2 with the value 2.
@@ -14,7 +14,7 @@ import java.util.List;
 public class AlarmSetter {
 
 
-    private static final String INPUT = "../Advent_2019/src/Day2/input.txt";
+    private static final String INPUT = "../Advent_2019/src/Day02/input.txt";
     private static final String SPLIT = ",";
     private static final int POS_1 = 12;
     private static final int POS_2 = 2;

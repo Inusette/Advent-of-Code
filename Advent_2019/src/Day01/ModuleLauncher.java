@@ -1,4 +1,4 @@
-package Day1;
+package Day01;
 
 // Part 1:
 // The Fuel Counter-Upper needs to know the total fuel requirement.
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class ModuleLauncher {
 
-    private static final String INPUT = "../Advent_2019/src/Day1/input.txt";
+    private static final String INPUT = "../Advent_2019/src/Day01/input.txt";
 
 
     public static void main(String[] args) {

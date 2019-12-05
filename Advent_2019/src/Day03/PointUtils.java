@@ -1,4 +1,4 @@
-package Day3;
+package Day03;
 
 import java.util.List;
 import java.awt.*;

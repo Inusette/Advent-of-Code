@@ -1,4 +1,10 @@
-package Day4;
+package Day04;
+
+// Part 1:
+// How many different passwords within the range given in your puzzle input meet these criteria?
+
+// Part 2:
+// How many different passwords within the range given in your puzzle input meet all of the criteria?
 
 import java.util.List;
 
@@ -20,6 +26,5 @@ public class PasswordFinder {
         // Part 2
         List<Integer> advancedPasswords = passwordGenerator.generateAdvancedPasswords();
         System.out.println(advancedPasswords.size());
-
     }
 }
