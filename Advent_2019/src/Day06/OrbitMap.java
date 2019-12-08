@@ -10,21 +10,25 @@ class OrbitMap {
 
     OrbitMap(Map<String, String> directOrbits) {
 
-        this.orbitMap = new HashMap<>();
         this.directOrbits = directOrbits;
 
-        mapPlanets();
+        this.orbitMap = mapPlanets();
     }
 
 
-    private void mapPlanets() {
+    private Map<String, List<String>> mapPlanets() {
 
-        // go over all the planects in the direct orbits map, and assemble the list of the indirect orbits
+        Map<String, List<String>> planetToOrbiters = new HashMap<>();
+
+        // go over all the planets in the direct orbits map, and assemble the list of the indirect orbits
         for (String orbiting : directOrbits.keySet()) {
 
-            orbitMap.put(orbiting, findOrbits(orbiting));
+            planetToOrbiters.put(orbiting, findOrbits(orbiting));
         }
+
+        return planetToOrbiters;
     }
+
 
     private List<String> findOrbits(String orbiting) {
         // a recursive method that assembles all the indirect orbits of a planet from direct orbits
@@ -82,7 +86,6 @@ class OrbitMap {
                min = distance;
            }
         }
-
         return min;
     }
 

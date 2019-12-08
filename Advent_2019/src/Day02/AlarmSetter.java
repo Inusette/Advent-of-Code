@@ -10,7 +10,6 @@ package Day02;
 // Find the input noun and verb that cause the program to produce the output 19690720.
 // What is 100 * noun + verb? (For example, if noun=12 and verb=2, the answer would be 1202.)
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class AlarmSetter {
@@ -28,11 +27,8 @@ public class AlarmSetter {
 
     public static void main(String[] args) {
 
-        // read the input into a list of strings
-        List<String> input = Utils.InputReader.readFileToList(INPUT);
-
-        // convert the input into a list of integers
-        List<Integer> inputIntcode = assembleInput(input);
+        // read the input into a list of integers
+        List<Integer> inputIntcode = Utils.InputReader.readFileIntoListOfIntegers(INPUT, SPLIT);
 
         // Part 1:
         // make an intcode with the given positions
@@ -45,22 +41,6 @@ public class AlarmSetter {
 
         //System.out.println(findPositions(inputIntcode));
 
-    }
-
-
-    private static List<Integer> assembleInput(List<String> input) {
-
-        List<Integer> inputNumbers = new ArrayList<>();
-
-        // iterate over lines
-        for (String line : input) {
-
-            // split the line and add each number to the list
-            for (String position : line.split(SPLIT)) {
-                inputNumbers.add(Integer.parseInt(position));
-            }
-        }
-        return inputNumbers;
     }
 
 

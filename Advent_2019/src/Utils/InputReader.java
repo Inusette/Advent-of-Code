@@ -26,6 +26,26 @@ public class InputReader {
     }
 
 
+    public static List<Integer> readFileIntoListOfIntegers(String fileName) {
+
+        List<String> input = readFileToList(fileName);
+
+        return ListAssembler.splitListOfStringsIntoListOfIntegers(input);
+    }
 
 
+    public static List<Integer> readFileIntoListOfIntegers(String fileName, String deliminator) {
+
+        List<String> input = readFileToList(fileName);
+
+        return ListAssembler.splitListOfStringsIntoListOfIntegers(input, deliminator);
+    }
+
+
+    public static List<Character> readFileIntoListOfChars(String fileName) {
+
+        List<String> input = readFileToList(fileName);
+
+        return ListAssembler.splitListOfStringsIntoListOfChars(input);
+    }
 }

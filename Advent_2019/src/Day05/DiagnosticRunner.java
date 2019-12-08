@@ -12,7 +12,6 @@ package Day05;
 // What is the diagnostic code for system ID 5?
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class DiagnosticRunner {
@@ -23,11 +22,8 @@ public class DiagnosticRunner {
 
     public static void main(String[] argds) {
 
-        // read the input into a list of strings
-        List<String> input = Utils.InputReader.readFileToList(INPUT);
-
-        // convert the input into a list of integers
-        List<Integer> inputIntcode = assembleInput(input);
+        // read the input into a list of integers
+        List<Integer> inputIntcode = Utils.InputReader.readFileIntoListOfIntegers(INPUT, SPLIT);
 
         IntcodeComputer intcoder = new IntcodeComputer(inputIntcode);
 
@@ -38,21 +34,5 @@ public class DiagnosticRunner {
             e.printStackTrace();
         }
 
-    }
-
-
-    private static List<Integer> assembleInput(List<String> input) {
-
-        List<Integer> inputNumbers = new ArrayList<>();
-
-        // iterate over lines
-        for (String line : input) {
-
-            // split the line and add each number to the list
-            for (String position : line.split(SPLIT)) {
-                inputNumbers.add(Integer.parseInt(position));
-            }
-        }
-        return inputNumbers;
     }
 }
