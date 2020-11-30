@@ -31,14 +31,16 @@ public class AdventFileUtils {
         } catch (IOException | URISyntaxException e) {
             System.out.println(e.getMessage());
         }
-
         return fileLines;
     }
 
+    /**
+     * Writes a given String into the Class path output file
+     * @throws FileNotFoundException - if the file is not found
+     */
     public static void writeStringIntoClassOutput(Class sourceClass, String output) throws FileNotFoundException {
 
         URL outputFileUrl = getFileUrl(sourceClass, OUTPUT_FILE);
-
         try (FileOutputStream outputStream = new FileOutputStream(new File(outputFileUrl.getPath()))){
             outputStream.write(output.getBytes());
         } catch (IOException e) {
