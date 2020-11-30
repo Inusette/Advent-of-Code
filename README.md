@@ -1,8 +1,7 @@
-# Fun-Problems
+# Advent of Code
 
-Various programming problems for fun and practice. 
+Doing my best to save Christmas each year, until I realize Santa doesn't exist and I'd rather be 
+watching Harry Potter while drinking hot cocoa. Besides, there are worse evils in the world, than 
+the Easter bunny. <3 
 
-Problems taken from [Advent of Code](http://adventofcode.com/2018) and
-[Project Euler](https://projecteuler.net/)
-
-:P
+Problems taken from [Advent of Code](http://adventofcode.com/) 
