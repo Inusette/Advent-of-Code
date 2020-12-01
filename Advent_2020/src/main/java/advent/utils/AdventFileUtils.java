@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import static advent.utils.AdventConstants.INPUT_FILE;
@@ -32,6 +33,21 @@ public class AdventFileUtils {
             System.out.println(e.getMessage());
         }
         return fileLines;
+    }
+
+    /**
+     * Reads the class path input file into a list of lines, where each line is a string
+     *
+     * @return List of lines, or an empty list + a printed exception
+     */
+    public static List<Integer> readClassInputIntoIntegerLines(Class sourceClass) {
+
+        List<Integer> numberLines = new LinkedList<>();
+        List<String> fileLines = readClassInputIntoLines(sourceClass);
+        for (String line : fileLines) {
+            numberLines.add(Integer.parseInt(line));
+        }
+        return numberLines;
     }
 
     /**

@@ -24,4 +24,12 @@ public class AdventFileUtilsTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testReadClassInputIntoIntegerLines() {
+
+        List<Integer> fileLines = AdventFileUtils.readClassInputIntoIntegerLines(AdventFileUtilsTest.class);
+        Assert.assertEquals(2, fileLines.size());
+        Assert.assertEquals(123, (int) fileLines.get(0));
+    }
 }
