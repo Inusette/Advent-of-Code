@@ -35,4 +35,14 @@ public class AdventFinderUtilsTest {
         int index = AdventFinderUtils.findElementInList(unorderedList, "i");
         Assert.assertEquals(3, index);
     }
+
+    @Test
+    public void testGetAllMatchesSuccessful() {
+        String source = "ho-ho-ho merry f**king Christmas!";
+        List<String> allMatches = AdventFinderUtils.getAllMatches(source, "ho");
+        Assert.assertEquals(3, allMatches.size());
+
+        allMatches = AdventFinderUtils.getAllMatches(source, "h");
+        Assert.assertEquals(4, allMatches.size());
+    }
 }

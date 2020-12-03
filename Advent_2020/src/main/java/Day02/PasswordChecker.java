@@ -1,17 +1,58 @@
 package Day02;
-/* Created on 02.12.2020 by Inna.Pirina (mailto:Inna.Pirina@cas.de)
- *
- * Project: CAS Open
- *
- * This software is confidential and proprietary information of CAS
- * Software AG. You shall not disclose such Confidential Information 
- * and shall use it only in accordance with the terms of the license 
- * agreement you entered into with CAS Software AG.
- *//**
-* 
-*
-* @author Inna Pirina (<a href="mailto:Inna.Pirina@cas.de">Inna.Pirina@cas.de</a>)
-* @since 02.12.2020
-*/
+
+import advent.utils.AdventFinderUtils;
+
+import java.util.List;
+
 public class PasswordChecker {
+
+    public static int countValidPasswordsA(List<String> inputLines) {
+
+        int validPasswordCount = 0;
+        for (String line : inputLines) {
+            Password password = parseLine(line);
+            List<String> allMatches = AdventFinderUtils.getAllMatches(password.password, String.valueOf(password.element));
+
+            if (allMatches.size() >= password.firstNumber && allMatches.size() <= password.secondNumber) {
+                validPasswordCount++;
+            }
+        }
+        return validPasswordCount;
+    }
+
+    public static int countValidPasswordsB(List<String> inputLines) {
+
+        int validPasswordCount = 0;
+        for (String line : inputLines) {
+            Password password = parseLine(line);
+
+            if (password.password.charAt(password.firstNumber - 1) == password.element
+                    ^ password.password.charAt(password.secondNumber - 1) == password.element) {
+                validPasswordCount++;
+            }
+        }
+        return validPasswordCount;
+    }
+
+    private static Password parseLine(String line) {
+
+        Password password = new Password();
+        String[] splitLine = line.split(":");
+        String[] splitRule = splitLine[0].split(" ");
+        String[] splitNumbers = splitRule[0].split("-");
+
+        password.password = splitLine[1].trim();
+        password.element = splitRule[1].trim().charAt(0);
+        password.firstNumber = Integer.parseInt(splitNumbers[0].trim());
+        password.secondNumber = Integer.parseInt(splitNumbers[1].trim());
+
+        return password;
+    }
+
+    private static class Password {
+        String password;
+        char element;
+        int firstNumber;
+        int secondNumber;
+    }
 }

@@ -1,17 +1,25 @@
 package Day03;
-/* Created on 03.12.2020 by Inna.Pirina (mailto:Inna.Pirina@cas.de)
- *
- * Project: CAS Open
- *
- * This software is confidential and proprietary information of CAS
- * Software AG. You shall not disclose such Confidential Information 
- * and shall use it only in accordance with the terms of the license 
- * agreement you entered into with CAS Software AG.
- *//**
-* 
-*
-* @author Inna Pirina (<a href="mailto:Inna.Pirina@cas.de">Inna.Pirina@cas.de</a>)
-* @since 03.12.2020
-*/
-public class Day03main {
+
+import advent.utils.AdventFileUtils;
+
+import java.util.List;
+
+public class Day03Main {
+
+    public static void main(String[] args) {
+
+        List<String> inputLines = getInput();
+        System.out.println("This is the input: \n" + inputLines);
+
+        int solutionA = MapTraverser.findTreesOnPath(inputLines);
+        System.out.println("SolutionA: " + solutionA);
+
+        long solutionB = MapTraverser.findProbabilityFromAllSlopes(inputLines);
+        System.out.println("SolutionB: " + solutionB);
+
+    }
+
+    protected static List<String> getInput() {
+        return AdventFileUtils.readClassInputIntoLines(Day03Main.class);
+    }
 }

@@ -1,17 +1,33 @@
 package Day03;
-/* Created on 03.12.2020 by Inna.Pirina (mailto:Inna.Pirina@cas.de)
- *
- * Project: CAS Open
- *
- * This software is confidential and proprietary information of CAS
- * Software AG. You shall not disclose such Confidential Information 
- * and shall use it only in accordance with the terms of the license 
- * agreement you entered into with CAS Software AG.
- *//**
-* 
-*
-* @author Inna Pirina (<a href="mailto:Inna.Pirina@cas.de">Inna.Pirina@cas.de</a>)
-* @since 03.12.2020
-*/
+
+import java.util.List;
+
 public class MapTraverser {
+
+    public static int findTreesOnPath(List<String> inputLines) {
+        return findTreesOnPath(3, 1, inputLines);
+    }
+
+    public static long findProbabilityFromAllSlopes(List<String> inputLines) {
+        long result = 1;
+        result *= findTreesOnPath(1, 1, inputLines);
+        result *= findTreesOnPath(3, 1, inputLines);
+        result *= findTreesOnPath(5, 1, inputLines);
+        result *= findTreesOnPath(7, 1, inputLines);
+        result *= findTreesOnPath(1, 2, inputLines);
+        return result;
+    }
+
+    private static int findTreesOnPath(int stepsRight, int stepsDown, List<String> treeMap) {
+        int treeCount = 0;
+        int currentColumn = stepsRight;
+        int patternSize = treeMap.get(0).length();
+        for (int currentRow = stepsDown; currentRow < treeMap.size(); currentRow += stepsDown) {
+            if (treeMap.get(currentRow).charAt(currentColumn) == '#') {
+                treeCount++;
+            }
+            currentColumn = (currentColumn + stepsRight) % patternSize;
+        }
+        return treeCount;
+    }
 }
