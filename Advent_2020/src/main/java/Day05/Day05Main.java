@@ -1,7 +1,6 @@
 package Day05;
 
 import advent.utils.AdventFileUtils;
-
 import java.util.List;
 
 public class Day05Main {

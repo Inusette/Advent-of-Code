@@ -1,9 +1,6 @@
 package advent.utils;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -45,6 +42,27 @@ public class AdventFinderUtils {
         return matcher.find();
     }
 
+    public static boolean containsAllPatterns(List<String> patternStrings, String stringToCheck) {
+
+        for (String regex : patternStrings) {
+            Matcher matcher = createPatternMatcher(regex, stringToCheck);
+            if (!matcher.find()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean containsAtLeastOnePattern(List<String> patternStrings, String toCheck) {
+        for (String regex : patternStrings) {
+            Matcher matcher = createPatternMatcher(regex, toCheck);
+            if (matcher.find()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * Finds the matches of the given regex patter in the given String
      *
@@ -58,6 +76,14 @@ public class AdventFinderUtils {
             matches.add(m.group());
         }
         return matches;
+    }
+
+    public static Optional<String> getMatch(String stringToCheck, String pattern) {
+        Matcher matcher = createPatternMatcher(pattern, stringToCheck);
+        if (matcher.find()) {
+            return Optional.of(matcher.group());
+        }
+        return Optional.empty();
     }
 
     private static void validateIndex(int foundAtIndex) {
