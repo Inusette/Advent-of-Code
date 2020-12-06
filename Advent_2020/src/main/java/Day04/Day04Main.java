@@ -8,8 +8,7 @@ public class Day04Main {
 
     public static void main(String[] args) {
 
-        List<String> inputLines = getInput();
-        List<String> passports = PassportParser.parsePassports(inputLines);
+        List<String> passports = getInput();
         passports.forEach(System.out::println);
 
         PassportValidator passportValidator = new PassportValidator(passports);
@@ -21,6 +20,6 @@ public class Day04Main {
     }
 
     protected static List<String> getInput() {
-        return AdventFileUtils.readClassInputIntoLines(Day04Main.class);
+        return AdventFileUtils.readInputChunksSplitByEmptyLines(Day04Main.class);
     }
 }
