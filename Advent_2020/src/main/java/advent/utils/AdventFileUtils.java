@@ -12,6 +12,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static advent.utils.AdventConstants.INPUT_FILE;
 import static advent.utils.AdventConstants.OUTPUT_FILE;
@@ -42,22 +43,34 @@ public class AdventFileUtils {
      */
     public static List<Integer> readClassInputIntoIntegerLines(Class sourceClass) {
 
-        List<Integer> numberLines = new LinkedList<>();
+        List<Integer> numberLines;
         List<String> fileLines = readClassInputIntoLines(sourceClass);
-        for (String line : fileLines) {
-            numberLines.add(Integer.parseInt(line));
-        }
+        numberLines = fileLines.stream().map(Integer::parseInt).collect(Collectors.toCollection(LinkedList::new));
+        return numberLines;
+    }
+
+    /**
+     * Reads the class path input file into a list of lines, where each line is a string
+     *
+     * @return List of lines, or an empty list + a printed exception
+     */
+    public static List<Long> readClassInputIntoLongLines(Class sourceClass) {
+
+        List<Long> numberLines;
+        List<String> fileLines = readClassInputIntoLines(sourceClass);
+        numberLines = fileLines.stream().map(Long::parseLong).collect(Collectors.toCollection(LinkedList::new));
         return numberLines;
     }
 
     /**
      * Writes a given String into the Class path output file
+     *
      * @throws FileNotFoundException - if the file is not found
      */
     public static void writeStringIntoClassOutput(Class sourceClass, String output) throws FileNotFoundException {
 
         URL outputFileUrl = getFileUrl(sourceClass, OUTPUT_FILE);
-        try (FileOutputStream outputStream = new FileOutputStream(new File(outputFileUrl.getPath()))){
+        try (FileOutputStream outputStream = new FileOutputStream(new File(outputFileUrl.getPath()))) {
             outputStream.write(output.getBytes());
         } catch (IOException e) {
             e.printStackTrace();
@@ -82,6 +95,7 @@ public class AdventFileUtils {
     /**
      * Reads input file into a list of Strings - chunks. Each chunk is separated by an empty line in the file.
      * The chunks are of inconsistent size.
+     *
      * @return List of String chunks
      */
     public static List<String> readInputChunksSplitByEmptyLines(Class sourceClass) {
@@ -96,8 +110,7 @@ public class AdventFileUtils {
             if (line.isEmpty()) {
                 inputChunks.add(currentChunk.toString());
                 currentChunk = new StringBuilder();
-            }
-            else {
+            } else {
                 currentChunk.append(String.format(" %s", line));
             }
         }

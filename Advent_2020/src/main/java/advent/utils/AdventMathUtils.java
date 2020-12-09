@@ -14,4 +14,8 @@ public class AdventMathUtils {
         intersection.retainAll(secondSet);
         return intersection;
     }
+
+    public static boolean isSumOfElements(long sum, long element1, long element2) {
+        return element1 + element2 == sum;
+    }
 }
