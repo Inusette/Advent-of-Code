@@ -45,4 +45,15 @@ public class AdventFinderUtilsTest {
         allMatches = AdventFinderUtils.getAllMatches(source, "h");
         Assert.assertEquals(4, allMatches.size());
     }
+
+    @Test
+    public void testReplaceAll() {
+        String toReplace = "44 66 23 23 | hohhoho";
+        String pattern = "\\b23";
+        String replacement = "ho";
+
+        String expected = "44 66 ho ho | hohhoho";
+        String replaced = AdventFinderUtils.replaceAllFoundPatterns(toReplace, pattern, replacement);
+        Assert.assertEquals(expected, replaced);
+    }
 }

@@ -64,7 +64,7 @@ public class AdventFinderUtils {
     }
 
     /**
-     * Finds the matches of the given regex patter in the given String
+     * Finds the matches of the given regex pattern in the given String
      *
      * @return An empty list if no matches were found
      */
@@ -78,10 +78,41 @@ public class AdventFinderUtils {
         return matches;
     }
 
+    public static int countAllMatches(String stringToCheck, String pattern) {
+        int matchCount = 0;
+        Matcher m = createPatternMatcher(pattern, stringToCheck);
+        while (m.find()) {
+            matchCount++;
+        }
+        return matchCount;
+    }
+
     public static Optional<String> getMatch(String stringToCheck, String pattern) {
         Matcher matcher = createPatternMatcher(pattern, stringToCheck);
         if (matcher.find()) {
             return Optional.of(matcher.group());
+        }
+        return Optional.empty();
+    }
+
+    public static String replaceAllFoundPatterns(String toCheck, String pattern, String replacement) {
+        Matcher matcher = createPatternMatcher(pattern, toCheck);
+        if (matcher.find()) {
+            return matcher.replaceAll(replacement);
+        }
+        return toCheck;
+    }
+
+    public static boolean matchesPattern(String toCheck, String pattern) {
+        Matcher matcher = createPatternMatcher(pattern, toCheck);
+        return matcher.matches();
+    }
+
+    public static Optional<String> findSequenceAtEnd(String toCheck, String pattern) {
+        pattern = String.format("(%s+)$", pattern);
+        Matcher matcher = createPatternMatcher(pattern, toCheck);
+        if (matcher.find()) {
+            return Optional.of(matcher.group(1));
         }
         return Optional.empty();
     }
