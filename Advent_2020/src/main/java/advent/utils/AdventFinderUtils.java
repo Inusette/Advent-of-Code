@@ -125,7 +125,7 @@ public class AdventFinderUtils {
         }
     }
 
-    private static Matcher createPatternMatcher(String regex, String toCheck) {
+    public static Matcher createPatternMatcher(String regex, String toCheck) {
         Pattern pattern = Pattern.compile(regex);
         return pattern.matcher(toCheck);
     }
