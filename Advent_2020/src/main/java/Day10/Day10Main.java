@@ -14,6 +14,9 @@ public class Day10Main {
         int joltDifferences = AdapterOrganizer.multiplyJoltDifferences(inputNumbers);
         System.out.println("joltDifferences = " + joltDifferences);
 
+        long allPossibleDifferences = AdapterOrganizer.findAllPossibleDifferences(inputNumbers);
+        System.out.println("allPossibleDifferences = " + allPossibleDifferences);
+
     }
 
     protected static List<Integer> getInput() {
