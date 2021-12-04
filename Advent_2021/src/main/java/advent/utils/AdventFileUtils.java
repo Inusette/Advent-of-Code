@@ -96,9 +96,10 @@ public class AdventFileUtils {
      * Reads input file into a list of Strings - chunks. Each chunk is separated by an empty line in the file.
      * The chunks are of inconsistent size.
      *
+     * @param delimiter: optionally separate the lines within the chunk with the delimiter
      * @return List of String chunks
      */
-    public static List<String> readInputChunksSplitByEmptyLines(Class sourceClass) {
+    public static List<String> readInputChunksSplitByEmptyLines(Class sourceClass, String delimiter) {
 
         List<String> inputLines = readClassInputIntoStringLines(sourceClass);
         inputLines.add(""); // make sure there is a last empty line
@@ -108,10 +109,16 @@ public class AdventFileUtils {
 
         for (String line : inputLines) {
             if (line.isEmpty()) {
-                inputChunks.add(currentChunk.toString());
+                if (delimiter != null) {
+                    currentChunk.delete(currentChunk.length() - delimiter.length(), currentChunk.length());
+                }
+                inputChunks.add(currentChunk.toString().trim());
                 currentChunk = new StringBuilder();
             } else {
                 currentChunk.append(String.format(" %s", line));
+                if (delimiter != null) {
+                    currentChunk.append(delimiter);
+                }
             }
         }
         return inputChunks;
