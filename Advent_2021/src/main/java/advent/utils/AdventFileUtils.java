@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -19,6 +20,26 @@ public class AdventFileUtils {
     public final static String INPUT_FILE = "input.txt";
 
     public final static String OUTPUT_FILE = "output.txt";
+
+    /**
+     * Reads the class path input file into a list of integers
+     * (the input looks like: 1,2,3,4,5,6,7.... )
+     *
+     * @return List of lines, or an empty list + a printed exception
+     */
+    public static List<Integer> readCommaSplitClassInputIntoIntegerList(Class sourceClass) {
+
+        List<Integer> integerList = new ArrayList<>();
+        try {
+            List<String> fileLines = readClassFileIntoLines(sourceClass);
+            integerList = Arrays.stream(fileLines.get(0).trim().split(","))
+                    .map(Integer::parseInt)
+                    .collect(Collectors.toList());
+        } catch (IOException | URISyntaxException e) {
+            System.out.println(e.getMessage());
+        }
+        return integerList;
+    }
 
     /**
      * Reads the class path input file into a list of lines, where each line is a string
