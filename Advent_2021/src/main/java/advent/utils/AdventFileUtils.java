@@ -1,5 +1,7 @@
 package advent.utils;
 
+import java.awt.event.KeyListener;
+import java.beans.IntrospectionException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -55,6 +57,26 @@ public class AdventFileUtils {
             System.out.println(e.getMessage());
         }
         return fileLines;
+    }
+
+    /**
+     * Reads the class path input file into a list of a list of Integers - matrix
+     *
+     * @return List of lists, or an empty list + a printed exception
+     */
+    public static List<List<Integer>> readClassInputIntoIntegerMatrix(Class sourceClass) {
+
+        List<List<Integer>> matrix = new ArrayList<>();
+        List<String> fileLines;
+        try {
+            fileLines = readClassFileIntoLines(sourceClass);
+            for (String line : fileLines) {
+                matrix.add(AdventCollectionsUtils.splitStringIntoIntegerList(line, ""));
+            }
+        } catch (IOException | URISyntaxException e) {
+            System.out.println(e.getMessage());
+        }
+        return matrix;
     }
 
     /**
