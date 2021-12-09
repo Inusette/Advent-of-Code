@@ -55,43 +55,43 @@ public class SevenSegmentParser {
     }
 
     public void parseDisplay(SevenSegmentDisplay d) {
-        while (d.patternToDigit.size() < 10) {
+        while (d.digitToPattern.size() < 10) {
             for (String pattern : d.signalPatterns) {
-                if (d.patternToDigit.containsValue(pattern)) {
+                if (d.digitToPattern.containsValue(pattern)) {
                     continue;
                 }
                 switch (pattern.length()) {
                     case 2:
-                        d.patternToDigit.put(1, pattern);
+                        d.digitToPattern.put(1, pattern);
                         break;
                     case 3:
-                        d.patternToDigit.put(7, pattern);
+                        d.digitToPattern.put(7, pattern);
                         break;
                     case 4:
-                        d.patternToDigit.put(4, pattern);
+                        d.digitToPattern.put(4, pattern);
                         break;
                     case 7:
-                        d.patternToDigit.put(8, pattern);
+                        d.digitToPattern.put(8, pattern);
                         break;
                     case 6:
-                        if (d.patternToDigit.containsKey(4) && isWithinSegment(pattern, d.patternToDigit.get(4))) {
-                            d.patternToDigit.put(9, pattern);
-                        } else if (d.patternToDigit.containsKey(1) && d.patternToDigit.containsKey(9)
-                                && isWithinSegment(pattern, d.patternToDigit.get(1))) {
-                            d.patternToDigit.put(0, pattern);
-                        } else if (d.patternToDigit.containsKey(0) && d.patternToDigit.containsKey(9)) {
-                            d.patternToDigit.put(6, pattern);
+                        if (d.digitToPattern.containsKey(4) && isWithinSegment(pattern, d.digitToPattern.get(4))) {
+                            d.digitToPattern.put(9, pattern);
+                        } else if (d.digitToPattern.containsKey(1) && d.digitToPattern.containsKey(9)
+                                && isWithinSegment(pattern, d.digitToPattern.get(1))) {
+                            d.digitToPattern.put(0, pattern);
+                        } else if (d.digitToPattern.containsKey(0) && d.digitToPattern.containsKey(9)) {
+                            d.digitToPattern.put(6, pattern);
                         } else {
                             continue;
                         }
                         break;
                     case 5:
-                        if (d.patternToDigit.containsKey(1) && isWithinSegment(pattern, d.patternToDigit.get(1))) {
-                            d.patternToDigit.put(3, pattern);
-                        } else if (d.patternToDigit.containsKey(6) && isWithinSegment(d.patternToDigit.get(6), pattern)) {
-                            d.patternToDigit.put(5, pattern);
-                        } else if (d.patternToDigit.containsKey(3) && d.patternToDigit.containsKey(5)) {
-                            d.patternToDigit.put(2, pattern);
+                        if (d.digitToPattern.containsKey(1) && isWithinSegment(pattern, d.digitToPattern.get(1))) {
+                            d.digitToPattern.put(3, pattern);
+                        } else if (d.digitToPattern.containsKey(6) && isWithinSegment(d.digitToPattern.get(6), pattern)) {
+                            d.digitToPattern.put(5, pattern);
+                        } else if (d.digitToPattern.containsKey(3) && d.digitToPattern.containsKey(5)) {
+                            d.digitToPattern.put(2, pattern);
                         } else {
                             continue;
                         }
@@ -125,7 +125,7 @@ public class SevenSegmentParser {
 
     private void translateOutput(SevenSegmentDisplay display) {
         for (String outputPattern : display.output) {
-            Integer outputDigit = display.patternToDigit.entrySet().stream()
+            Integer outputDigit = display.digitToPattern.entrySet().stream()
                     .filter(entry -> isSameSegment(outputPattern, entry.getValue()))
                     .map(Map.Entry::getKey)
                     .findFirst()
@@ -137,20 +137,20 @@ public class SevenSegmentParser {
     public static class SevenSegmentDisplay {
         List<String> signalPatterns;
         List<String> output;
-        Map<Integer, String> patternToDigit;
+        Map<Integer, String> digitToPattern;
         List<Integer> outputInDigits;
 
         public SevenSegmentDisplay() {
             signalPatterns = new ArrayList<>();
             output = new ArrayList<>();
-            patternToDigit = new HashMap<>();
+            digitToPattern = new HashMap<>();
             outputInDigits = new ArrayList<>();
         }
 
         @Override
         public String toString() {
             return "SevenSegmentDisplay{" + "signalPatterns=" + signalPatterns + ", output=" + output +
-                    ", patternToDigit=" + patternToDigit + '}';
+                    ", patternToDigit=" + digitToPattern + '}';
         }
     }
 }
