@@ -35,6 +35,12 @@ public class AdventMathUtils {
                 .orElse(Collections.emptyList());
     }
 
+    public static int decreaseOrIncreaseByOne(int a, int b) {
+        if (a == b)
+            return 0;
+        return a < b ? 1 : -1;
+    }
+
     public static boolean isSumOfElements(long sum, long element1, long element2) {
         return element1 + element2 == sum;
     }
