@@ -31,7 +31,7 @@ public class AdventFinderUtils {
      *
      * @return either index or -1 if the element is not found
      */
-    public static <T> int findElementInStringList(List<T extends Comparable<T>> listToSearch, T key) {
+    public static int findElementInStringList(List<String>  listToSearch, String key) {
         Collections.sort(listToSearch);
         int foundAtIndex = Arrays.binarySearch(listToSearch.toArray(), key);
         validateIndex(foundAtIndex);
