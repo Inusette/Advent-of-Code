@@ -1,21 +1,22 @@
 package Day03;
 
-import java.util.Collections;
 import java.util.List;
+
+import advent.utils.AdventFileUtils;
 
 public class Day03Main {
 
 	public static void main(String[] args) {
+		List<String> rucksacklines = getInput();
 
-		System.out.println("Here we go!");
+		int oddItemsPriorities = RucksackPacker.findOddItemsPriorities(rucksacklines);
+		System.out.println("The total double items pritorities: " + oddItemsPriorities);
 
-		// read input
-
-		// print puzzle solutions
-
+		int badgePriorities = RucksackPacker.findBadgePriorities(rucksacklines);
+		System.out.println("The total badge pritorities: " + badgePriorities);
 	}
 
-	protected static List<Integer> getInput() {
-		return Collections.emptyList();
+	protected static List<String> getInput() {
+		return AdventFileUtils.readInputIntoStringLines(Day03Main.class);
 	}
 }
