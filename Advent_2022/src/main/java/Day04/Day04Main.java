@@ -1,21 +1,25 @@
 package Day04;
 
-import java.util.Collections;
+import static advent.utils.AdventFileUtils.readInputIntoStringLines;
+
 import java.util.List;
 
 public class Day04Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("Here we go!");
+		List<String> elfPairLines = getInput();
+		CleanupPairIdenitifier cleanupPairIdenitifier = new CleanupPairIdenitifier();
+		List<ElfPair> elfPairs = cleanupPairIdenitifier.identifyPairAreas(elfPairLines);
 
-		// read input
+		long pairsWithCompletelyOverlappingAreas = cleanupPairIdenitifier.countPairsWithCompletelyOverlappingAreas(elfPairs);
+		System.out.println("Number of Elf pairs, where one range fully contain the other: " + pairsWithCompletelyOverlappingAreas);
 
-		// print puzzle solutions
-
+		long pairsWithIntersections = cleanupPairIdenitifier.countPairsWithIntersections(elfPairs);
+		System.out.println("Number of Elf pairs, where the ranges overlap: " + pairsWithIntersections);
 	}
 
-	protected static List<Integer> getInput() {
-		return Collections.emptyList();
+	protected static List<String> getInput() {
+		return readInputIntoStringLines(Day04Main.class);
 	}
 }
