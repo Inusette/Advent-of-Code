@@ -1,21 +1,25 @@
 package Day05;
 
-import java.util.Collections;
+import static Day05.ContainerStackArrenger.rearrangeContainerStacksEfficiently;
+import static advent.utils.AdventFileUtils.readInputIntoStringLines;
+
+import java.util.ArrayDeque;
 import java.util.List;
 
 public class Day05Main {
 
 	public static void main(String[] args) {
+		List<String> inputInLines = getInput();
+		List<MovingDirection> movingDirections = ContainerStackArrenger.parseMovingDirections(inputInLines);
 
-		System.out.println("Here we go!");
+		String topContainers = ContainerStackArrenger.rearrangeContainerStacks(movingDirections, ContainerStackArrenger.makeStacksFromInput(inputInLines));
+		System.out.println(topContainers);
 
-		// read input
-
-		// print puzzle solutions
-
+		topContainers = rearrangeContainerStacksEfficiently(movingDirections, ContainerStackArrenger.makeStacksFromInput(inputInLines));
+		System.out.println(topContainers);
 	}
 
-	protected static List<Integer> getInput() {
-		return Collections.emptyList();
+	protected static List<String> getInput() {
+		return readInputIntoStringLines(Day05Main.class);
 	}
 }
