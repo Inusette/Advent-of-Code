@@ -1,21 +1,23 @@
 package Day06;
 
-import java.util.Collections;
 import java.util.List;
+
+import advent.utils.AdventFileUtils;
 
 public class Day06Main {
 
 	public static void main(String[] args) {
+		String inputAsString = getInput().get(0);
+		System.out.println(inputAsString);
 
-		System.out.println("Here we go!");
+		int indexOfFirstStartMarker = StartMarkerIdentifier.findIndexOfFirstStartMarker(inputAsString, 4);
+		System.out.println("Packet size 4: " + indexOfFirstStartMarker);
 
-		// read input
-
-		// print puzzle solutions
-
+		indexOfFirstStartMarker = StartMarkerIdentifier.findIndexOfFirstStartMarker(inputAsString, 14);
+		System.out.println("Packet size 14: " + indexOfFirstStartMarker);
 	}
 
-	protected static List<Integer> getInput() {
-		return Collections.emptyList();
+	protected static List<String> getInput() {
+		return AdventFileUtils.readInputIntoStringLines(Day06Main.class);
 	}
 }
