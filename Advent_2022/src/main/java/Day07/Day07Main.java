@@ -1,21 +1,23 @@
 package Day07;
 
-import java.util.Collections;
 import java.util.List;
+
+import advent.utils.AdventFileUtils;
 
 public class Day07Main {
 
 	public static void main(String[] args) {
+		List<String> inputAsLines = getInput();
 
-		System.out.println("Here we go!");
+		DataStorageOrganizer dataStorageOrganizer = new DataStorageOrganizer();
+		long sumOfSpecificDirectorySizes = dataStorageOrganizer.sumFileSizes(inputAsLines);
+		System.out.println(sumOfSpecificDirectorySizes);
 
-		// read input
-
-		// print puzzle solutions
-
+		int aDirectoryToDelete = dataStorageOrganizer.findADirectoryToDelete();
+		System.out.println(aDirectoryToDelete);
 	}
 
-	protected static List<Integer> getInput() {
-		return Collections.emptyList();
+	protected static List<String> getInput() {
+		return AdventFileUtils.readInputIntoStringLines(Day07Main.class);
 	}
 }
