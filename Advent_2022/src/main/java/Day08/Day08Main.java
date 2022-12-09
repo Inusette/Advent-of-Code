@@ -1,21 +1,24 @@
 package Day08;
 
-import java.util.Collections;
 import java.util.List;
+
+import advent.utils.AdventFileUtils;
 
 public class Day08Main {
 
 	public static void main(String[] args) {
+		List<List<Integer>> forestMatrix = getInput();
 
-		System.out.println("Here we go!");
+		TreeVisibilityIdentifier treeVisibilityIdentifier = new TreeVisibilityIdentifier();
+		treeVisibilityIdentifier.exploreForest(forestMatrix);
+		int numberOfVisibleTrees = treeVisibilityIdentifier.findNumberOfVisibleTrees();
+		System.out.println(numberOfVisibleTrees);
 
-		// read input
-
-		// print puzzle solutions
-
+		int highestPossibleScenicScore = treeVisibilityIdentifier.findHighestPossibleScenicScore();
+		System.out.println(highestPossibleScenicScore);
 	}
 
-	protected static List<Integer> getInput() {
-		return Collections.emptyList();
+	protected static List<List<Integer>> getInput() {
+		return AdventFileUtils.readInputIntoIntegerMatrix(Day08Main.class);
 	}
 }
