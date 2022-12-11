@@ -1,21 +1,22 @@
 package Day10;
 
-import java.util.Collections;
+import static advent.utils.AdventFileUtils.readInputIntoStringLines;
+
 import java.util.List;
 
 public class Day10Main {
 
 	public static void main(String[] args) {
+		List<String> inputAsLines = getInput();
+		CircuitReader circuitReader = new CircuitReader();
+		circuitReader.readCircuit(inputAsLines);
 
-		System.out.println("Here we go!");
-
-		// read input
-
-		// print puzzle solutions
-
+		int signalStrengths = circuitReader.sumSinalStrengths();
+		System.out.println(signalStrengths);
+		circuitReader.printCycleSignals();
 	}
 
-	protected static List<Integer> getInput() {
-		return Collections.emptyList();
+	protected static List<String> getInput() {
+		return readInputIntoStringLines(Day10Main.class);
 	}
 }
