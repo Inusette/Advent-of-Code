@@ -74,6 +74,23 @@ public class AdventFileUtils {
     }
 
     /**
+     * Reads the class path input file into a list of a list of Characters - matrix
+     *
+     * @return List of lists, or an empty list + a printed exception
+     */
+    public static List<List<Character>> readInputIntoCharacterMatrix(Class sourceClass) {
+        List<List<Character>> matrix = new ArrayList<>();
+        List<String> fileLines;
+        try {
+            fileLines = readClassFileIntoLines(sourceClass);
+            matrix = fileLines.stream().map(line -> Arrays.stream(line.split("")).map(s -> s.charAt(0)).toList()).toList();
+        } catch (IOException | URISyntaxException e) {
+            System.out.println(e.getMessage());
+        }
+        return matrix;
+    }
+
+    /**
      * Reads the class path input file into a list of lines, where each line is an integer
      *
      * @return List of lines, or an empty list + a printed exception
