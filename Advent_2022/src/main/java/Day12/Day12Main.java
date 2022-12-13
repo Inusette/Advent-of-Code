@@ -1,21 +1,27 @@
 package Day12;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
+
+import advent.utils.AdventFileUtils;
 
 public class Day12Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("Here we go!");
+		List<ArrayList<Character>> inputAsMatrix = getInput();
+		inputAsMatrix.forEach(System.out::println);
 
-		// read input
+		HillClimbPathFinder hillClimbPathFinder = new HillClimbPathFinder(inputAsMatrix);
+		int pathWithLeastSteps = hillClimbPathFinder.findPathWithLeastSteps();
+		System.out.println("pathWithLeastSteps = " + pathWithLeastSteps);
 
-		// print puzzle solutions
-
+		int pathWithLeastStepsFromAnyStart = hillClimbPathFinder.findPathWithLeastStepsFromAnyStart();
+		System.out.println(pathWithLeastStepsFromAnyStart);
 	}
 
-	protected static List<Integer> getInput() {
-		return Collections.emptyList();
+	protected static List<ArrayList<Character>> getInput() {
+		List<List<Character>> inputIntoCharacterMatrix = AdventFileUtils.readInputIntoCharacterMatrix(Day12Main.class);
+		return inputIntoCharacterMatrix.stream().map(ArrayList::new).toList();
 	}
 }
